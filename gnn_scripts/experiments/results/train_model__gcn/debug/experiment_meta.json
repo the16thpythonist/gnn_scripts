@@ -1,0 +1,11 @@
+{
+    "base_path": "/media/ssd/Programming/gnn_scripts/gnn_scripts/experiments",
+    "description": "\nThis is a sub experiment derived from ...\n\nCHANGELOG\n\n0.1.0 - initial version\n",
+    "duration": 5.889629125595093,
+    "end_time": 1691236023.3177533,
+    "has_error": false,
+    "namespace": "results/train_model",
+    "short_description": "",
+    "start_time": 1691236017.4281242,
+    "status": "done"
+}
