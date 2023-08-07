@@ -62,6 +62,8 @@ Each experiment can simply be executed by
     # example
     python3 train_model__gcn.py
 
+When executing the scripts, make sure that both global variables ``__DEBUG__`` and ``__TESTING__`` are set to ``False``. 
+
 
 Model Training Experiments
 --------------------------
@@ -79,8 +81,8 @@ SMILES Datasets
 All the experiment scripts are exectuble by themselves, but will only use the ``test.csv`` dataset which contains randomly generated class labels 
 for testing purposes.
 
-To use the scripts it will be necessary to define a custom dataset by supplying the absolute path in the ``CSV_PATH`` global variable. Additionally 
-the column names of the smiles column and the target value column have to be adjusted in the ``SMILES_COLUMN_NAME`` and ``TARGET_COLUMN_NAME`` variables.
+To use the scripts on custom data, it will be necessary to define a custom dataset by supplying the absolute path in the ``CSV_PATH`` global variable. 
+Additionally, the column names of the smiles column and the target value column have to be adjusted in the ``SMILES_COLUMN_NAME`` and ``TARGET_COLUMN_NAME`` variables.
 
 Credits
 =======

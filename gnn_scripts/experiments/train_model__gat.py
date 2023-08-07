@@ -1,10 +1,6 @@
 
 """
-This is a sub experiment derived from ...
-
-CHANGELOG
-
-0.1.0 - initial version
+Training of a GATv2 model.
 """
 import os
 import pathlib
@@ -23,6 +19,11 @@ from pycomex.utils import file_namespace, folder_path
 
 PATH = pathlib.Path(__file__).parent.absolute()
 
+
+# == EXPERIMENT PARAMETERS ==
+# These parameters relate to the behavior of the experiment execution.
+__DEBUG__ = False
+__TESTING__ = False
 
 # == DATASET PARAMETERS ==
 # All the parameters which are related to the dataset, which includes the loading of the raw 
@@ -123,10 +124,6 @@ class GatModel(ks.models.Model):
             out = lay(out)
         
         return out
-    
-    
-__DEBUG__ = True
-__TESTING__ = True
 
 
 experiment = Experiment.extend(
